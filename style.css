@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+	background-image: url('Satoru.jpg');
+    background-size: cover;
+	@page {
+            size: 21cm 14.85cm; 
+            margin: 0;
+        }
+}
+}
+a:hover, a:focus, a:active {
+	color: #FF0077;
+	outline: 0;
+}
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-size: 110%;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #005b80;
+    transform: scale(1.1);
+}
+ .container {
+            width: 0 auto; 
+            height: 100vh;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+			display: flex;
+			background-color: rgba(255, 255, 255, 0.9);
+ }
+ .container2 {
+            width: 100%; 
+            height: 100vh;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+			display: flex;
+			background-color: rgba(255, 255, 255, 0.9);
+ }
+		

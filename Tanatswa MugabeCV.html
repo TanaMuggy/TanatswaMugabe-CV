@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Tanatswa Mugabe - CV</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tanatswa S. Mugabe Curriculum Vitae</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#ContactInfo">Contact Info</a></li>
+            </ul>
+        </nav>
+    </header>
+ <div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p><li>My name is Tanatswa Salvatore Mugabe.</li> 
+		<li>I am a 20 year old Computer Science student at Harare Institute of Technology. </li>
+		<li>I am in my 2nd year at the Institute. </li>
+		<li>My hobbies include playing games, swimming, working out and making mini projects in C#.</li> </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <li>I have worked at TBWA as an assistant graphics designer during my O level holiday in 2018</li>
+		<li>In 2021 I worked at JEIDEE Tech as a technician, there I would repair damaged laptops, desktops, keyboards, printers and other electronics</li>
+		<li>I have also developed a record capturing application for Dr Mbetsa, who is a local surgeon in Kwekwe</li>
+    </section>
+	</div>
+	 <div class="container2">
+	  <section id="skills">
+        <h2>Skills</h2>
+       <p><li>A good communicator, self-driven and able to work under pressure with peers while maintaining a positive attitude. Also very adaptable.</li>
+		<p><li>Installation, diagnosis, maintenance and repair of all electronics gadgets and equipment (laptops, desktop computers and printers).</li>
+		<p><li>Installation, trobleshooting and maintenance of Microsoft Windows Operating System(s) [Windows 11, 10, 8.1, 8] and Applications [information processing, peripherals setup, driver installations, data
+		recovery].</li>
+		<p><li>Demonstrate exceptional use of MS Word, MS Excel and MS PowerPoint applications,Installation, diagnosis, maintenance and repair of all electronics gadgets
+		and equipment (laptops, desktop computers and printers). </li>
+		<p><li>Application Development in Visual Studio using C# and Visual Basic</li></p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p> <li>I did my primary education at Avondale Primary School, where i managed to get 6 Units at grade 7</p>
+		<p> <li>I did my O level at ZRP High, here i managed to get 7As  and 5Bs at form 4 level</p>
+		<p> <li>I went back to ZRP High to complete my A level, here I studied Pure Math, Physics and Computer Science and managed to come out with 2 As in Math and Cumputer Science and a C in Physics</p>
+    </section>
+	
+	<section  id="ContactInfo">
+        <h2>Contact Details</h2>
+        <p><li>Email: salvatoremugabe@gmail.com</li> 
+		 <p><li>Phone Number: +263712327944</li>
+		 <p><li>Instagram: @tmugabe </li>
+		<li>Facebook: @tmugabe</li> </p>
+    </section>
+ </div>
+ <section>
+    <a href="TanatswaMugabeCV-2023InternHIT.pdf" download="TanatswaMugabeCV-2023InternHIT.pdf" class="download-button">Download CV</a>  
+	</section>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling for anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    for (let anchorLink of anchorLinks) {
+        anchorLink.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: "smooth"
+            });
+        });
+    }
+});
+
+document.getElementById("downloadBtn").addEventListener("click", () => {
+    const pdfName = "TanatswaMugabeCV-2023InternHIT.pdf";
+    const pdfContent = document.documentElement.outerHTML;
+
+    const blob = new Blob([pdfContent], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = TanatswaMugabeCV-2023InternHIT.pdf;
+    a.click();
+});
+
+</script>
+</html>
